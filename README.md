@@ -7,3 +7,5 @@ Groupe 4
 - He
 - Yvan 
 - Yanis
+
+URL de dépôt : https://github.com/Bricee-o/Projet-2048-LSIN200
