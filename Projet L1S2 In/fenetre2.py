@@ -186,6 +186,9 @@ def exit():
 
     bouton5 = tk.Button(fenetre, text="Bas", font=("helvetica", "10"),command=None)
     bouton5.grid(column=1, row=8)
+    
+    #Fenetre de fin de partie
+
     fenetre2 = tk.Tk()
     fenetre2.title("Fin de partie")
     label01 = tk.Label(fenetre2, text="FIN DE PARTIE", font = ("helvetica", "30"))
