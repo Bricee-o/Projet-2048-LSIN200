@@ -26,7 +26,7 @@ largeur_case = WIDTH // 4
 hauteur_case = HEIGHT // 4
 
 canvas = tk.Canvas(fenetre, bg="gray", height=HEIGHT, width=WIDTH)
-canvas.create_text(250,250,text="Ciliquer sur Nouveau partie pour commencer")
+canvas.create_text(250,250,text="Ciliquer sur Nouvelle partie pour commencer")
 canvas.grid(column=0,columnspan=5, row=1, rowspan=5)
 
 #-------------------------------------------------------------------------------
@@ -204,7 +204,7 @@ def exit():
 
 #m=[[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
 
-bouton1 = tk.Button(fenetre, text="Nouveau Partie", font=("helvetica", "10"),command=start)
+bouton1 = tk.Button(fenetre, text="Nouvelle Partie", font=("helvetica", "10"),command=start)
 bouton1.grid(column=6, row=1)
 
 bouton2 = tk.Button(fenetre, text="Exit", font=("helvetica", "10"),command=exit)
