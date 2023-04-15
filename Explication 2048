@@ -1,2 +1,29 @@
-Compte-rendu :
+Compte-rendu : (BROUILLON)
 
+Le programme est divisée en 9 sous-parties:
+
+Explication programme:
+
+Numéro ligne :
+
+1- On importe la bibliothèque Tkinter pour l'interface graphique, on la renomme "tk"
+2- On importe la bibliothèque time (DONNER DEF)
+13- On créer notre fenêtre Tkinter
+14- On donne un titre à notre fenêtre Tkinter
+16- Création d'un widget texte
+17- Positionement du widget dans la fenêtre
+19- Création d'une varaible "HEIGHT" qui va nous permettre de definir les dimensions du canvas que l'on va créer 
+20- Création d'une variable "WIDTH" qui va nous permettre de faire la meme chose que la variable HEIGHT
+21- Création de la variable "largeur case" qui va nous permettre de defnir la taille des cases dans la grille de notre 2048
+22- Création de la variable "hauteur case" même fonction que "largeur case"
+24- 
+25-
+26-
+
+Partie où l'on définie les fonctions de notre jeu:
+
+31- Définition d'une fontion "tablo"
+32- 
+33-
+34-
+35-
