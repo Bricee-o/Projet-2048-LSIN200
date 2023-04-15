@@ -33,6 +33,12 @@ Partie où l'on définie les fonctions de notre jeu:
 43- On lance une autre boucle dans cette boucle
 45- On créer la variable "color" à laquelle on attribue le code couleur de la couleur "gris"
 46- Création des cases de la grille 4x4 de couleur grise
-47-
-48-
-49-
+47-??
+48- On ajoute t à la liste tabe
+49- ?? je connais update mais que pour les dictionnaire jsp ce que ça fait avec tkinter ??
+
+
+52- On créer la fonction "dele" qui va nous permettre de
+53-
+54-
+55-
