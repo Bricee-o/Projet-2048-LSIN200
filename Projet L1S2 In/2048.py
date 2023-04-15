@@ -10,15 +10,11 @@ from pynput.keyboard import Key
 from victory import *
 from possible import *
 
-import time
-
 fenetre = tk.Tk()
 fenetre.title("2048")
 
-
-label1 = tk.Label(fenetre, text="2048", font = ("helvetica", "30"))
+label1 = tk.Label(fenetre, text="2048", font = ("helvetica", "30"),fg="#ede0c8")
 label1.grid(column=2, row=0)
-
 
 HEIGHT = 500
 WIDTH = 500
@@ -26,7 +22,7 @@ largeur_case = WIDTH // 4
 hauteur_case = HEIGHT // 4
 
 canvas = tk.Canvas(fenetre, bg="gray", height=HEIGHT, width=WIDTH)
-canvas.create_text(250,250,text="Ciliquer sur Nouvelle partie pour commencer")
+canvas.create_text(250,250,text="Cliquer sur Nouvelle partie pour commencer")
 canvas.grid(column=0,columnspan=5, row=1, rowspan=5)
 
 #-------------------------------------------------------------------------------
@@ -157,7 +153,7 @@ def start():
     #    listener.join()
 #start() #On lance la game, c'est ici qu'on peut jouer réellement
 
-label2 = tk.Label(fenetre, text="Score: 0", font = ("helvetica", "20")) 
+label2 = tk.Label(fenetre, text="Score: 0",fg="#f65e3b" ,font = ("helvetica", "20")) 
 label2.grid(column=6, row=0)
 
 def conter(liste):
@@ -190,10 +186,10 @@ def exit():
     #Fenetre de fin de partie
 
     fenetre2 = tk.Tk()
-    fenetre2.title("Fin de partie")
-    label01 = tk.Label(fenetre2, text="FIN DE PARTIE", font = ("helvetica", "30"))
-    label01.grid(column=0, row=0,rowspan=2)
-    label02 = tk.Label(fenetre2, text="Score:" + str(conter(table)), font = ("helvetica", "30"))
+    fenetre2.title("FIN")
+    label01 = tk.Label(fenetre2, text="Fin de partie", font = ("helvetica", "20"),bg="#eee4da")
+    label01.grid(column=0, row=0,rowspan=5)
+    label02 = tk.Label(fenetre2, text="Score:" + str(conter(table)), font = ("helvetica", "20"),bg="#eee4da")
     label02.grid(column=1, row=1)
     fenetre2.mainloop()
 
