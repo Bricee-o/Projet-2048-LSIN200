@@ -22,8 +22,17 @@ Numéro ligne :
 
 Partie où l'on définie les fonctions de notre jeu:
 
-31- Définition d'une fontion "tablo"
+31- Définition d'une fontion "tablo" qui va nous permettre de créer notre grille
 32- On globalise la varaible "tabe" définie dans tablo pour qu'elle soit aussi utilisable à l'extérieur de celle-ci
 33- On fait de même pour la variable "table"
-34- La variable tabe est un tableau
-35- 
+34- La variable tabe est une liste vide
+35- On définit la variable "meh", c'est une liste vide
+40- On affiche "table"
+41- On affiche tabe
+42- On lance une boucle de 3 tours
+43- On lance une autre boucle dans cette boucle
+45- On créer la variable "color" à laquelle on attribue le code couleur de la couleur "gris"
+46- Création des cases de la grille 4x4 de couleur grise
+47-
+48-
+49-
