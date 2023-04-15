@@ -16,14 +16,14 @@ Numéro ligne :
 20- Création d'une variable "WIDTH" qui va nous permettre de faire la meme chose que la variable HEIGHT
 21- Création de la variable "largeur case" qui va nous permettre de defnir la taille des cases dans la grille de notre 2048
 22- Création de la variable "hauteur case" même fonction que "largeur case"
-24- 
-25-
-26-
+24- Création d'un Canevas carré gris, on utiluse HEIGHT et WIDTH pour le dimensionner
+25- On ajoute du texte dans notre carré qui fait office d'interface de départ
+26- On positionne le canvas dans notre fenêtre
 
 Partie où l'on définie les fonctions de notre jeu:
 
 31- Définition d'une fontion "tablo"
-32- 
-33-
-34-
-35-
+32- On globalise la varaible "tabe" définie dans tablo pour qu'elle soit aussi utilisable à l'extérieur de celle-ci
+33- On fait de même pour la variable "table"
+34- La variable tabe est un tableau
+35- 
