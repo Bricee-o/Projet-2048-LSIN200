@@ -4,7 +4,7 @@ Le programme est divisée en 9 sous-parties:
 
 Explication programme:
 
-Numéro ligne :
+Numéro ligne programme:
 
 1- On importe la bibliothèque Tkinter pour l'interface graphique, on la renomme "tk"
 2- On importe la bibliothèque time (DONNER DEF)
