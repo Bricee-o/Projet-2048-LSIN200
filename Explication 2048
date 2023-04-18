@@ -2,43 +2,25 @@ Compte-rendu : (BROUILLON)
 
 Le programme est divisée en 9 sous-parties:
 
-Explication programme:
+Explication programme chaque grosse partie du programme en "bref":
 
-Numéro ligne programme:
+L13-26 : Création de notre fenetre principale et definition des mesures pour les cases de la grille 4x4
 
-1- On importe la bibliothèque Tkinter pour l'interface graphique, on la renomme "tk"
-2- On importe la bibliothèque time (DONNER DEF)
-13- On créer notre fenêtre Tkinter
-14- On donne un titre à notre fenêtre Tkinter
-16- Création d'un widget texte
-17- Positionement du widget dans la fenêtre
-19- Création d'une varaible "HEIGHT" qui va nous permettre de definir les dimensions du canvas que l'on va créer 
-20- Création d'une variable "WIDTH" qui va nous permettre de faire la meme chose que la variable HEIGHT
-21- Création de la variable "largeur case" qui va nous permettre de defnir la taille des cases dans la grille de notre 2048
-22- Création de la variable "hauteur case" même fonction que "largeur case"
-24- Création d'un Canevas carré gris, on utiluse HEIGHT et WIDTH pour le dimensionner
-25- On ajoute du texte dans notre carré qui fait office d'interface de départ
-26- On positionne le canvas dans notre fenêtre
+L29-184 : Création des fonctions de création de la grille, de mouvement sur la grille, score, fin de partie
 
-Partie où l'on définie les fonctions de notre jeu:
+-tablo : Créer la grille 4x4
+-dele :
+-start :
+-inp :
+-droite :
+-gauche :
+-bas :
+-haut :
+-conter :
+-score :
+-exit :
 
-31- Définition d'une fontion "tablo" qui va nous permettre de créer notre grille
-32- On globalise la varaible "tabe" définie dans tablo pour qu'elle soit aussi utilisable à l'extérieur de celle-ci
-33- On fait de même pour la variable "table"
-34- La variable tabe est une liste vide
-35- On définit la variable "meh", c'est une liste vide
-40- On affiche "table"
-41- On affiche tabe
-42- On lance une boucle de 3 tours
-43- On lance une autre boucle dans cette boucle
-45- On créer la variable "color" à laquelle on attribue le code couleur de la couleur "gris"
-46- Création des cases de la grille 4x4 de couleur grise
-47-??
-48- On ajoute t à la liste tabe
-49- ?? je connais update mais que pour les dictionnaire jsp ce que ça fait avec tkinter ??
+L186-194 : Création fenêtre fin de partie
 
+L202-219 : Création Bouton Save,Exit,Nouvelle Partie,Load
 
-52- On créer la fonction "dele" qui va nous permettre de
-53-
-54-
-55-
