@@ -10,16 +10,17 @@ from pynput.keyboard import Key
 from victory import *
 from possible import *
 
-fenetre = tk.Tk()
-fenetre.title("2048")
+fenetre = tk.Tk() #On créer notre fenêtre Tkinter
+fenetre.title("2048") #On donne un titre à la fenêtre
 
-label1 = tk.Label(fenetre, text="2048", font = ("helvetica", "30"),fg="#ede0c8")
-label1.grid(column=2, row=0)
+label1 = tk.Label(fenetre, text="2048", font = ("helvetica", "30"),fg="#ede0c8") #Création d'un widget texte
+label1.grid(column=2, row=0) #Positionement du widget dans la fenêtre
 
-HEIGHT = 500
-WIDTH = 500
-largeur_case = WIDTH // 4
-hauteur_case = HEIGHT // 4
+HEIGHT = 500                #Création d'une varaible "HEIGHT" qui va nous permettre de definir les dimensions du canvas que l'on va créer 
+WIDTH = 500                 #Création d'une variable "WIDTH" qui va nous permettre de faire la meme chose que la variable HEIGHT
+largeur_case = WIDTH // 4   #Création de la variable "largeur case" qui va nous permettre de defnir la taille des cases dans la grille de notre 2048
+hauteur_case = HEIGHT // 4  #Création de la variable "hauteur case" même fonction que "largeur case"
+
 
 canvas = tk.Canvas(fenetre, bg="gray", height=HEIGHT, width=WIDTH)
 canvas.create_text(250,250,text="Cliquer sur Nouvelle partie pour commencer")
