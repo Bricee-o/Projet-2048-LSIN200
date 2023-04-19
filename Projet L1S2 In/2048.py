@@ -22,12 +22,12 @@ largeur_case = WIDTH // 4   #Création de la variable "largeur case" qui va nous
 hauteur_case = HEIGHT // 4  #Création de la variable "hauteur case" même fonction que "largeur case"
 
 
-canvas = tk.Canvas(fenetre, bg="gray", height=HEIGHT, width=WIDTH)
-canvas.create_text(250,250,text="Cliquer sur Nouvelle partie pour commencer")
-canvas.grid(column=0,columnspan=5, row=1, rowspan=5)
+canvas = tk.Canvas(fenetre, bg="gray", height=HEIGHT, width=WIDTH) #Création d'un Canevas carré gris, on utiluse HEIGHT et WIDTH pour le dimensionner
+canvas.create_text(250,250,text="Cliquer sur Nouvelle partie pour commencer") #On ajoute du texte dans notre carré qui fait office d'interface de départ
+canvas.grid(column=0,columnspan=5, row=1, rowspan=5) #On positionne le canvas dans notre fenêtre
 
 #-------------------------------------------------------------------------------
-#Fonction
+#Fonctions
 
 def tablo():
     global tabe
