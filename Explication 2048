@@ -9,7 +9,7 @@ L13-26 : Création de notre fenetre principale et definition des mesures pour le
 L29-184 : Création des fonctions de création de la grille, de mouvement sur la grille, score, fin de partie
 
 -tablo : Créer la grille 4x4, permet aussi de refresh à chaque mouvement de case
--dele :
+-dele : 
 -start :
 -inp :
 -droite :
