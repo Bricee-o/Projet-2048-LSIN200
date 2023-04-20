@@ -13,7 +13,7 @@ L20-335 : Création des fonctions:
          La table est global pour être facile d'accès et non-modifié entre les programmes
          La fonction apparaît quand le clavier est utilisé
          Pour chaque flèche directionnel, on a un if différent pour matcher les mouvements
-         poss = possibility(table): La fonction renvoie tout les mouvements possibles entre Up, Down, Right et Left, ça semble mieux comme ça ?
+         poss = possibility(table): La fonction renvoie tout les mouvements possibles entre Up, Down, Right et Left
 
 -conter : Fait la somme de tout les éléments dans la matrice
 
