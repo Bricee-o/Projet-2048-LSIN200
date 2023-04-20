@@ -64,10 +64,4 @@ DONNER PLUS DETAILS -> poss = possibility(table): Tout les moves autorisé pour 
 
 L186-194 : Création fenêtre fin de partie
 
-L202-219 : Création Bouton Save, Exit, Nouvelle Partie, Load
-
-- Save :
-- Exit :
-- Nouvelle Partie :
-- Load : 
 
