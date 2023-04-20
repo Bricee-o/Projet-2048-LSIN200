@@ -1,11 +1,6 @@
-Compte-rendu : (BROUILLON)
-
-Le programme est divisée en 9 sous-parties:
-
-Explication programme chaque grosse partie du programme en "bref":
+Compte-rendu :
 
 L13-26 : Création de notre fenetre principale et definition des mesures pour les cases de la grille 4x4
-
 L29-184 : Création des fonctions "logiques"
 
 -tablo : Créer la grille 4x4, permet aussi de refresh à chaque mouvement de case 
