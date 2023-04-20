@@ -285,9 +285,9 @@ def exit():
     
     fenetre2 = tk.Tk()
     fenetre2.title("Fin de partie")
-    label01 = tk.Label(fenetre2, text="FIN DE PARTIE", font = ("helvetica", "30"))
+    label01 = tk.Label(fenetre2, text="FIN DE PARTIE", font = ("helvetica", "20"))
     label01.grid(column=0, row=0)    #Mettre victoire ou defaite au milieu des deux
-    label02 = tk.Label(fenetre2, text="Score: " + str(conter(table)), font = ("helvetica", "30"))
+    label02 = tk.Label(fenetre2, text="Score: " + str(conter(table)), font = ("helvetica", "20"))
     label02.grid(column=0, row=2)
 
     win = False
