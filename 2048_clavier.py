@@ -293,8 +293,8 @@ def sauvegarder():
     t=[]
     t=table.copy()
     f =open('savestate1.txt', 'w')
-    json.dump(t, f)
-    f.close()
+    json.dump(t, f) #dump : utilisée lorsque nous voulons stocker et transférer des objets dans un fichier sous forme de JSON 
+    f.close()             
 
 def charger():
     global table
