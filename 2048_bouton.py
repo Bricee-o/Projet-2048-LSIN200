@@ -325,8 +325,8 @@ def charger():
     for i in range(len(charge)):
         h=[]
         table.append(h)
-        for row in charge[i]:
-            h.append(row)
+        for l in charge[i]:
+            h.append(l)
     tablo()
     score()
     f.close()
