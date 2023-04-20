@@ -320,13 +320,7 @@ def sauvegarder():
 def charger():
     global table
     f=open('savestate1.txt', 'r')
-    charge = json.load(f)
-    table=[]
-    for i in range(len(charge)):
-        h=[]
-        table.append(h)
-        for l in charge[i]:
-            h.append(l)
+    table = json.load(f)
     tablo()
     score()
     f.close()
