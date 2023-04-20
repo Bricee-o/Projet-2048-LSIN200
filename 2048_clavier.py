@@ -276,9 +276,9 @@ def exit():
         if max(table[i]) >= 2048:
             win = True
     if win:
-        label03 = tk.Label(fenetre2, text="Victoire", font = ("helvetica", "30"))
+        label03 = tk.Label(fenetre2, text="Victoire", font = ("helvetica", "20"))
     else:
-        label03 = tk.Label(fenetre2, text="Perdu", font = ("helvetica", "30"))
+        label03 = tk.Label(fenetre2, text="Perdu", font = ("helvetica", "20"))
     label03.grid(column=0, row=1)
 
     fenetre2.mainloop()
