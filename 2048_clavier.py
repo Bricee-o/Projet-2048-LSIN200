@@ -218,7 +218,7 @@ def inp(event):
     poss = possibility(table)                   #Tout les moves autorisé pour que le programme te laisse pas faire n'importe quoi
 
     if  key == 'Right' and 'R' in poss:    #Pour chaque flèche directionnel, on a un if différent pour matcher les moves
-        game('R')                  #Y a que R, L, U et D
+        game('R')                  #YIl n'y a que R, L, U et D
         a = True
 
     elif key == 'Left' and 'L' in poss:    
@@ -286,7 +286,7 @@ def exit():
 def lose(table):
             
     a = possibility(table)                 #Programme de gêle du jeu + écran de fin
-    if len(a) == 5 or len(a) == 0:         #On utilise sa pour verifier que y'ai pas de bug
+    if len(a) == 5 or len(a) == 0:         #On utilise ça pour verifier que y'ai pas de bug
         exit()  
                                      
 def sauvegarder():
