@@ -38,13 +38,16 @@ L20-335 : Création des fonctions:
 -lose : Programme de gêle du jeu + écran de victoire
         On l’utilise pour vérifier qu’il n’y ai pas de bug Mais on pourrait l'utiliser pour vérifier si il y à une défaite dans le cas où la liste est vide 
 
--supprime :
+-supprime : Supprime la case
 
--cheat :
+-cheat : Verifie que notre fonction marche ou non
 
--fusion :
+-fusion : Dans cette fonction les cases fusionnent avec leur voisin selon le mouvement indiqué
+          Il y a 1 fonction pour chaque mouvement
+          L'évolution des cases ce fait par addition de 2 cases identiques et côte à côte
 
--casebonus :
+-casebonus : Cette fonction permet vérifier s'il y a des cases vides 
+             Puis si c'est le cas, tiré un chiffre au hasard pour déterminer si c'est 4 ou 2 Sinon on touche a rien
 
 -exit : Quand joueur clique sur le bouton, ça permet de créer une autre fenêtre qui affiche s'il à gagné ou perdu et affiche le score 
        Créer les nouveaux boutons sur les boutons haut&bas&gauche&droit, pour bloquer les boutons puis finir la partie.
