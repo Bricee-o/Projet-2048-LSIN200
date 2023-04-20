@@ -34,7 +34,7 @@ DONNER PLUS DETAILS -> poss = possibility(table): Tout les moves autorisé pour 
 
 -score : Changement de score quand il y a un mouvement (quand la matrice change)
 
--inp : On initialise le tableau de base, composé de 0 puis de 2 cases au hasard.
+-ini : On initialise le tableau de base, composé de 0 puis de 2 cases au hasard.
        Le tableau est une variable global pour ne pas l'envoyer et le recevoir a chaque fois
        Casebonus() permet de rajout 2 ou 4 dans une case vide, donc on l'utilise 2 fois en début de partie, pour avoir 2 cases pré-rempli.
 
@@ -43,13 +43,15 @@ DONNER PLUS DETAILS -> poss = possibility(table): Tout les moves autorisé pour 
              Tant que k et j n'indique pas à l'exterieur du tableau et que la case suivante est vide 
              Même chose 4 fois pour les 4 directions possibles, Pas de return car le tableau est global
 
--sauvegarder : 
+-sauvegarder : Cette fonction permet de créer un ficher texte et enregistrer le tableau dans le fichier texte, pour que le joueur puisse bien lire les valeurs, on les sépare avec «;»
 
--charger :
+-charger : Cette fonction permet de lire le fichier crée par la fonction sauvegarder, pour que le joueur puisse continuer de jouer
+           Le boucle for permet de lire le tableau élément par élément
 
 -game :
 
--lose :
+-lose : Programme de gêle du jeu + écran de victoire
+        On l’utilise pour vérifier qu’il n’y ai pas de bug Mais on pourrait l'utiliser pour vérifier si il y à une défaite dans le cas où la liste est vide 
 
 -cheat :
 
@@ -57,7 +59,8 @@ DONNER PLUS DETAILS -> poss = possibility(table): Tout les moves autorisé pour 
 
 -casebonus :
 
--exit :
+-exit : Quand joueur clique sur le bouton, ça permet de créer une autre fenêtre qui affiche s'il à gagné ou perdu et affiche le score 
+       Créer les nouveaux boutons sur les boutons haut&bas&gauche&droit, pour bloquer les boutons puis finir la partie.
 
 
 
