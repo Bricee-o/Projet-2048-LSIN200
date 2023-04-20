@@ -9,6 +9,7 @@ from pynput import *
 from pynput.keyboard import Key
 from victory import *
 from possible import *
+import json
 
 fenetre = tk.Tk() #On créer notre fenêtre Tkinter
 fenetre.title("2048") #On donne un titre à la fenêtre
@@ -59,20 +60,20 @@ def dele():
 def sauvegarder():
     t=[]
     t=table.copy()
-    f =open('fichier_a.txt', 'wb')
-    pickle.dump(t, f)
-    return t
+    f =open('fichier_a.txt', 'w')
+    json.dump(t, f)
+    print(table)
 
 def charger():
-    f=open('fichier_a.txt', 'rb')
-    charge = pickle.load(f)
+    f=open('fichier_a.txt', 'r')
+    charge = json.load(f)
     table=[]
     for i in range(len(charge)):
         h=[]
         table.append(h)
         for row in charge[i]:
             h.append(row)
-        return table
+    tablo()
 
 
 def start():
