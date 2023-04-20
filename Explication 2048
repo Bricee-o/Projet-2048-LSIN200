@@ -6,7 +6,7 @@ Explication programme chaque grosse partie du programme en "bref":
 
 L13-26 : Création de notre fenetre principale et definition des mesures pour les cases de la grille 4x4
 
-L29-184 : Création des fonctions de création de la grille, de mouvement sur la grille, score, fin de partie
+L29-184 : Création des fonctions de création de la grille, de mouvement sur la grille, score, fin de partie, de sauvegarde et fonction load
 
 -tablo : Créer la grille 4x4, permet aussi de refresh à chaque mouvement de case
 -dele : 
@@ -18,7 +18,12 @@ L29-184 : Création des fonctions de création de la grille, de mouvement sur la
 -haut :
 -conter :
 -score :
+-inp :
+-sauvegarder :
+-charger :
 -exit :
+
+
 
 L186-194 : Création fenêtre fin de partie
 
