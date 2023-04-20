@@ -6,22 +6,59 @@ Explication programme chaque grosse partie du programme en "bref":
 
 L13-26 : Création de notre fenetre principale et definition des mesures pour les cases de la grille 4x4
 
-L29-184 : Création des fonctions de création de la grille, de mouvement sur la grille, score, fin de partie, de sauvegarde et fonction load
+L29-184 : Création des fonctions "logiques"
 
--tablo : Créer la grille 4x4, permet aussi de refresh à chaque mouvement de case
--dele : 
--start :
--inp :
+-tablo : Créer la grille 4x4, permet aussi de refresh à chaque mouvement de case 
+
+-possibility : La fonction possibility détermine toute les possibilités envisageable et renvoie une liste de toute les possibilités
+               Pour chaque mouvement possible, ça va vérifier si la case à coté est soit vide, soit identique 
+               Ensuite elle vérifie si le mouvement n'est pas déjà présent dans la liste Sinon ça rajoute le mouvement (Il y a 3 if à chaque fois au cas où l'un des voisins est hors-tableau)
+
+-start : Cette fonction permet de commencer une nouvelle partie
+         La table est global pour être facile d'accès et non-modifié entre les programmes
+         La fonction apparaît quand le clavier est utilisé
+         Pour chaque flèche directionnel, on a un if différent pour matcher les mouvements
+DONNER PLUS DETAILS -> poss = possibility(table): Tout les moves autorisé pour que le programme te laisse pas faire n'importe quoi
+
+-inp : 
+
 -droite :
+
 -gauche :
+
 -bas :
+
 -haut :
--conter :
--score :
--inp :
--sauvegarder :
+
+-conter : Fait la somme de tout les éléments dans la matrice
+
+-score : Changement de score quand il y a un mouvement (quand la matrice change)
+
+-inp : On initialise le tableau de base, composé de 0 puis de 2 cases au hasard.
+       Le tableau est une variable global pour ne pas l'envoyer et le recevoir a chaque fois
+       Casebonus() permet de rajout 2 ou 4 dans une case vide, donc on l'utilise 2 fois en début de partie, pour avoir 2 cases pré-rempli.
+
+-mouvement : Cette fonction permet de vérifier si on peut faire un mouvement si oui il fait le déplacement de matrice si non il ne bouge pas
+             Si la case est 0, on déplace la case avant jusqu'à ce que ce soit pas 0
+             Tant que k et j n'indique pas à l'exterieur du tableau et que la case suivante est vide 
+             Même chose 4 fois pour les 4 directions possibles, Pas de return car le tableau est global
+
+-sauvegarder : 
+
 -charger :
+
+-game :
+
+-lose :
+
+-cheat :
+
+-fusion :
+
+-casebonus :
+
 -exit :
+
 
 
 
