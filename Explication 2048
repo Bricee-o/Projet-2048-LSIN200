@@ -18,7 +18,7 @@ L29-184 : Création des fonctions "logiques"
          La table est global pour être facile d'accès et non-modifié entre les programmes
          La fonction apparaît quand le clavier est utilisé
          Pour chaque flèche directionnel, on a un if différent pour matcher les mouvements
-DONNER PLUS DETAILS -> poss = possibility(table): Tout les moves autorisé pour que le programme te laisse pas faire n'importe quoi
+         poss = possibility(table): La fonction renvoie tout les mouvements possibles entre Up, Down, Right et Left, ça semble mieux comme ça ?
 
 -inp : 
 
