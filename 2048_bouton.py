@@ -75,7 +75,7 @@ def mouvement(move):
                         k = 1                           #Si la case est 0, on déplace la case avant jusqu'à ce que se soit pas 0
                         while j+k < len(table) and table[i][j+k]== 0:
                             case_vide = 0                       #Tant que k et j n'indique pas à l'exterieur du tableau
-                            case_deplace = table[i][j+k-1]         # et que la case suivant est vide
+                            case_deplace = table[i][j+k-1]         # et que la case suivantz est vide
                             table[i][j+k] = case_deplace           #Tout ça c'est la base du déplacement dans une Matrice
                             table[i][j+k-1] = case_vide
                             k += 1
@@ -336,7 +336,7 @@ def charger():
 #Bouton
 
 
-bouton1 = tk.Button(fenetre, text="Nouveau Partie", font=("helvetica", "10"),command=start)
+bouton1 = tk.Button(fenetre, text="Nouvelle Partie", font=("helvetica", "10"),command=start)
 bouton1.grid(column=6, row=1)
 
 bouton2 = tk.Button(fenetre, text="Exit", font=("helvetica", "10"),command=exit)
