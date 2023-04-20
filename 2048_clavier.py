@@ -75,7 +75,7 @@ def mouvement(move):
                         k = 1                           #Si la case est 0, on déplace la case avant jusqu'à ce que se soit pas 0
                         while j+k < len(table) and table[i][j+k]== 0:
                             case_vide = 0                       #Tant que k et j n'indique pas à l'exterieur du tableau
-                            case_deplace = table[i][j+k-1]         # et que la case suivant est vide
+                            case_deplace = table[i][j+k-1]         # et que la case suivante est vide
                             table[i][j+k] = case_deplace           #Tout ça c'est la base du déplacement dans une Matrice
                             table[i][j+k-1] = case_vide
                             k += 1
@@ -218,7 +218,7 @@ def inp(event):
     poss = possibility(table)                   #Tout les moves autorisé pour que le programme te laisse pas faire n'importe quoi
 
     if  key == 'Right' and 'R' in poss:    #Pour chaque flèche directionnel, on a un if différent pour matcher les moves
-        game('R')                  #Y a que R, L, U et D
+        game('R')                  #YIl n'y a que R, L, U et D
         a = True
 
     elif key == 'Left' and 'L' in poss:    
@@ -286,7 +286,7 @@ def exit():
 def lose(table):
             
     a = possibility(table)                 #Programme de gêle du jeu + écran de fin
-    if len(a) == 5 or len(a) == 0:         #On utilise sa pour verifier que y'ai pas de bug
+    if len(a) == 5 or len(a) == 0:         #On utilise ça pour verifier que y'ai pas de bug
         exit()  
                                      
 def sauvegarder():
@@ -314,7 +314,7 @@ def charger():
 #Bouton
 
 
-bouton1 = tk.Button(fenetre, text="Nouveau Partie", font=("helvetica", "10"),command=lambda:[start()])
+bouton1 = tk.Button(fenetre, text="Nouvelle Partie", font=("helvetica", "10"),command=lambda:[start()])
 bouton1.grid(column=6, row=1)
 
 bouton2 = tk.Button(fenetre, text="Exit", font=("helvetica", "10"),command=exit)

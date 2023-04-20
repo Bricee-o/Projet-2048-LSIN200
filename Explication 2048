@@ -1,7 +1,7 @@
 Compte-rendu :
 
-L13-26 : Création de notre fenetre principale et definition des mesures pour les cases de la grille 4x4
-L29-184 : Création des fonctions "logiques"
+L5-18 : Création de notre fenetre principale et definition des mesures pour les cases de la grille 4x4
+L20-335 : Création des fonctions:
 
 -tablo : Créer la grille 4x4, permet aussi de refresh à chaque mouvement de case 
 
@@ -13,17 +13,7 @@ L29-184 : Création des fonctions "logiques"
          La table est global pour être facile d'accès et non-modifié entre les programmes
          La fonction apparaît quand le clavier est utilisé
          Pour chaque flèche directionnel, on a un if différent pour matcher les mouvements
-         poss = possibility(table): La fonction renvoie tout les mouvements possibles entre Up, Down, Right et Left, ça semble mieux comme ça ?
-
--inp : 
-
--droite :
-
--gauche :
-
--bas :
-
--haut :
+         poss = possibility(table): La fonction renvoie tout les mouvements possibles entre Up, Down, Right et Left
 
 -conter : Fait la somme de tout les éléments dans la matrice
 
@@ -43,23 +33,26 @@ L29-184 : Création des fonctions "logiques"
 -charger : Cette fonction permet de lire le fichier crée par la fonction sauvegarder, pour que le joueur puisse continuer de jouer
            Le boucle for permet de lire le tableau élément par élément
 
--game :
+-game : Gère les mouvements du tableau
 
 -lose : Programme de gêle du jeu + écran de victoire
         On l’utilise pour vérifier qu’il n’y ai pas de bug Mais on pourrait l'utiliser pour vérifier si il y à une défaite dans le cas où la liste est vide 
 
--cheat :
+-supprime : Supprime la case
 
--fusion :
+-cheat : Verifie que notre fonction marche ou non
 
--casebonus :
+-fusion : Dans cette fonction les cases fusionnent avec leur voisin selon le mouvement indiqué
+          Il y a 1 fonction pour chaque mouvement
+          L'évolution des cases ce fait par addition de 2 cases identiques et côte à côte
+
+-casebonus : Cette fonction permet vérifier s'il y a des cases vides 
+             Puis si c'est le cas, tiré un chiffre au hasard pour déterminer si c'est 4 ou 2 Sinon on touche a rien
 
 -exit : Quand joueur clique sur le bouton, ça permet de créer une autre fenêtre qui affiche s'il à gagné ou perdu et affiche le score 
        Créer les nouveaux boutons sur les boutons haut&bas&gauche&droit, pour bloquer les boutons puis finir la partie.
 
+L313-334 : Création boutons Nouvelle Partie,Exit,Save,Load,Cheat
 
-
-
-L186-194 : Création fenêtre fin de partie
 
 
