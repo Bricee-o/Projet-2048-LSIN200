@@ -55,7 +55,25 @@ def dele():
     for i in range(len(tabe)):
         canvas.delete(tabe[i])
         #canvas.update()
+ 
+def sauvegarder():
+    table = [[0]*4 for i in range(4)]
+    f =open('fichier_save.txt', 'wb')
+    pickle.dump(table, f)
 
+def charger():
+    t1=[]
+    t2=[]
+    t3=[]
+    t4=[]
+    table=[t1,t2,t3,t4]
+    f=open('fichier_save.txt', 'rb')
+    charge = pickle.load(f)
+    
+    for i in range(len(charge)):
+        for row in charge[i]:
+            table[i].append(row)
+    return table
 
 
 def start():
