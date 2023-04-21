@@ -40,7 +40,6 @@ L20-335 : Création des fonctions:
 
 -supprime : Supprime la case
 
--cheat : Verifie que notre fonction marche ou non
 
 -fusion : Dans cette fonction les cases fusionnent avec leur voisin selon le mouvement indiqué
           Il y a 1 fonction pour chaque mouvement
