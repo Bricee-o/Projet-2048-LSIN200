@@ -342,8 +342,8 @@ bouton3.grid(column=6, row=3)
 bouton4 = tk.Button(fenetre, text="Load", font=("helvetica", "10"),command=charger)
 bouton4.grid(column=6, row=4)
 
-bouton9 = tk.Button(fenetre, text="Cheat", font=("helvetica", "10"), command=cheat)
-bouton9.grid(column=6, row=5)
+#bouton9 = tk.Button(fenetre, text="Cheat", font=("helvetica", "10"), command=cheat)
+#bouton9.grid(column=6, row=5)
 
 
 fenetre.mainloop()
