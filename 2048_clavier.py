@@ -291,8 +291,8 @@ def lose(table):
                                      
 def sauvegarder():
     t=[]
-    t=table.copy()
-    f =open('savestate1.txt', 'w')
+    t=table.copy()  #copy() pour que t ne soit pas modifié
+    f =open('savestate1.txt', 'w')  #Cette ligne ouvre le fichier et le crée en meme temps avec "w"
     json.dump(t, f) #dump : utilisée lorsque nous voulons stocker et transférer des objets dans un fichier sous forme de JSON 
     f.close()             
 
@@ -306,7 +306,7 @@ def charger():
         table.append(h)
         for row in charge[i]:
             h.append(row)
-    tablo()
+    tablo()  #c'est pour mettre afficher le tableau dans le jeu
     score()
     f.close()
 
