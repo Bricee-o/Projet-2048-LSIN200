@@ -192,12 +192,12 @@ def tablo():
     canvas.update()
 
 
-def cheat():
-    global table
-    table = [[0, 0, 0, 16],[0, 0, 0, 16],[0, 0, 0, 0],[0, 0, 0, 0]]
-    tablo()
-    score()
-    poss = possibility(table)                   #Tout les moves autorisé pour que le programme te laisse pas faire n'importe quoi
+#def cheat():
+#    global table
+#    table = [[0, 0, 0, 16],[0, 0, 0, 16],[0, 0, 0, 0],[0, 0, 0, 0]]
+#    tablo()
+#   score()
+#    poss = possibility(table)                   #Tout les moves autorisé pour que le programme te laisse pas faire n'importe quoi
 
 
 def start():
